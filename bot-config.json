@@ -1,0 +1,59 @@
+{
+  "finalMessageStart": "Ваши инструменты: ",
+  "finalMessageEnd": ".\n\nЧтобы начать сначала нажмите на кнопку \"Начать сначала\"",
+  "answerTree": {
+    "question": "Данный бот бла бла...\n\nЧтобы начать нажмите на кнопку \"Выбор инструмента\"",
+    "answers": {
+      "Выбор инструмента": {
+        "question": "Какую задачу должен решить инструмент?",
+        "answers": {
+          "Анализ данных": {
+            "question": "Онлайн или на своем ПК?",
+            "answers": {
+              "Онлайн": {
+                "final": "Google Colab и Tomat.A"
+              },
+              "На ПК": {
+                "final": "Rapidminer, Jupiter Notebook"
+              }
+            }
+          },
+          "Коммуникация": {
+            "final": "Zoom, MS Teams, BigBlueBoton, SberJazz"
+          },
+          "Статистика": {
+            "final": "Google Colab, Roistat, Lighthouse"
+          },
+          "Визуализация": {
+            "question": "Готовое решение или открытый исходный код?",
+            "answers": {
+              "Готовое решение": {
+                "final": "Google Colab, Tableau Public"
+              },
+              "Открытый исходный код": {
+                "final": "Redash, Grafana Labs, D3.js"
+              }
+            }
+          },
+          "Безопасность": {
+            "final": "Nessus, Dr Web, Vulners, Lamescan 3, Dylib Hijack Scanner"
+          },
+          "Машинное обучение": {
+            "question": "Онлайн или на своем ПК?",
+            "answers": {
+              "Онлайн": {
+                "final": "Google Colab, Apache Spark, TensorFlow, AWS"
+              },
+              "На ПК": {
+                "final": "Rapidminer, Jupiter Notebook"
+              }
+            }
+          },
+          "Симуляция эксперимента": {
+            "final": "VR Labs, Multisim, SolidWorks"
+          }
+        }
+      }
+    }
+  }
+}
