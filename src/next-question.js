@@ -26,7 +26,11 @@ export const nextQuestion = (message, sessions, botConfig, bot) => {
     return treeAnswer
   }, botConfig.answerTree);
 
-  if (nextQuestion && nextQuestion.final) {
+  if (!nextQuestion) {
+    return start(message, sessions, botConfig, bot);
+  }
+
+  if (nextQuestion.final) {
     bot.sendMessage(
       sessionId,
       botConfig.finalMessageStart + nextQuestion.final + botConfig.finalMessageEnd,
