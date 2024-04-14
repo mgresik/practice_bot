@@ -6,7 +6,7 @@ export const nextQuestion = (message, sessions, botConfig) => {
   const session = sessions[sessionId];
 
   if (!session) {
-    return start(message);
+    return start(message, sessions, botConfig);
   }
   
   sessions[sessionId].push(message.text);
