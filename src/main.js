@@ -15,8 +15,8 @@ const sessions = {};
 
 bot.on('message', async message => {
   switch (message.text) {
-    case '/start': start(message, sessions, botConfig); break;
-    case 'Начать сначала': start(message, sessions, botConfig); break;
-    default: nextQuestion(message, sessions, botConfig); break;
+    case '/start': start(message, sessions, botConfig, bot); break;
+    case 'Начать сначала': start(message, sessions, botConfig, bot); break;
+    default: nextQuestion(message, sessions, botConfig, bot); break;
   }
 })

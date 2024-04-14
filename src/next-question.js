@@ -1,12 +1,12 @@
 import { start } from './start.js';
  
-export const nextQuestion = (message, sessions, botConfig) => {
+export const nextQuestion = (message, sessions, botConfig, bot) => {
   const sessionId = message.chat.id;
 
   const session = sessions[sessionId];
 
   if (!session) {
-    return start(message, sessions, botConfig);
+    return start(message, sessions, botConfig, bot);
   }
   
   sessions[sessionId].push(message.text);

@@ -1,6 +1,6 @@
 import { getQuestionButtons } from './helpers/get-question-buttons.js';
 
-export const start = (message, sessions, botConfig) => {
+export const start = (message, sessions, botConfig, bot) => {
   const sessionId = message.chat.id;
 
   sessions[sessionId] = [];
