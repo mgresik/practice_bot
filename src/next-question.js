@@ -1,5 +1,6 @@
 import { start } from './start.js';
 import { getQuestionButtons } from './helpers/get-question-buttons.js';
+import { getButtons } from './helpers/get-buttons.js';
  
 export const nextQuestion = (message, sessions, botConfig, bot) => {
   const sessionId = message.chat.id;
