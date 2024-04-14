@@ -1,3 +1,5 @@
+import { start } from './start.js';
+ 
 export const nextQuestion = (message, sessions, botConfig) => {
   const sessionId = message.chat.id;
 
